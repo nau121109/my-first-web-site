@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+        <script>
+            function two(){
+                document.write('<li>2-1</li>');
+                document.write('<li>2-2</li>');
+            }
+            document.write('<li>1</li>');
+            two();
+            document.write('<li>3</li>');
+            two();
+        </script>
+    </ul>
+    <h2>Parameter & Arguement</h2>
+    <ul>
+        <script>
+            function onePlusone(){
+                document.write('<li>'+(1+1)+'</li>');
+            }
+            onePlusone();
+            function sum(left, right){
+                document.write('<li>'+ ( left + right ) + '</li>');
+            }
+            sum(2,3);
+            sum(4,3);
+    </script>
+
+    </ul>
+    <h2>Return</h2>
+    <ul>
+        <script>
+            function sumColorRed(left, right){
+                document.write('<li> <div style="color:red">'+ ( left + right ) + '</div></li>');
+            }
+            sumColorRed(4,3);
+            
+            function sumSize(left, right){
+                document.write('<li> <div style= "font-size:3rem">'+ ( left + right )+'</div></li>');
+            }
+            sumSize(4,3);
+
+            function sum2(left, right){
+                return left + right;
+            }
+            document.write('<li>'+sum2(2,3) + '</li>');
+            document.write('<li> <div style= "color:red">'+sum2(2,3)+'</div></li>');
+            document.write('<li> <div style= "font-size:3rem">'+sum2(2,3)+'</div></li>');
+            
+        </script>
+    </ul>
+    
+</body>
+</html>
